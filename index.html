@@ -1,7 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodeGraph </title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="https://d3js.org/d3.v4.js"></script>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<div class="container">
+    <header>
+        <h1>Exploring Functions and Variables</h1>
+        <div>Name: Hannah Swan; E-Mail: hannah.swan@utah.edu; UID: u0939840</div>
+    </header>
+
+
+    <div class="view">
+        <h2>Function Table</h2>
+
+        <table id="functionTable">
+            <thead>
+            <tr>
+                <th id="functionHeader">Functions</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="goalHeader"></td>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+    </div>
+    <div class="view">
+
+
+        <h2>CodeGraph</h2>
+        <svg width="500" height="900">
+            <g id="tree"></g>
+        </svg>
+    </div>
+
+</div>
+<script type="application/javascript" src="js/tree.js"></script>
+<script type="application/javascript" src="js/table.js"></script>
+<script type="application/javascript" src="js/script.js"></script>
 </body>
 </html>
